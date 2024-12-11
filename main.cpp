@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
     window.setLayout(vlayout);
     window.show();
 
+    // this is commnet
     // Set up code that uses the Qt event loop here.
     // Call a.quit() or a.exit() to quit the application.
     // A not very useful example would be including
