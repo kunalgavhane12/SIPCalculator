@@ -143,6 +143,8 @@ void SIPCalculator::calculateSip()
     series->clear();
     series->append("Investment Amount", totalAmt);
     series->append("Est. returns", EstReturnAmt);
+    series->append("Total value", maturity);
+
 
     QPieSlice *slice_1 = nullptr;
     QPieSlice *slice_2 = nullptr;
