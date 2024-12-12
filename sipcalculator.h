@@ -38,11 +38,7 @@ private:
     QPushButton *LumpsumBtn;
 
     QPieSeries *series;
-    QChart *chart;
-
-    double totalAmt = 0.0;
-    double EstReturnAmt = 0.0;
-    double maturity = 0.0;
+    QChart *chart;   
 };
 
 #endif // SIPCALCULATOR_H
