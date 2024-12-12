@@ -1,4 +1,4 @@
-QT = core widgets
+QT = core widgets charts
 
 CONFIG += c++17 cmdline
 

@@ -5,6 +5,8 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QLineEdit>
+#include <QChart>
+#include <QPieSeries>
 
 class SIPCalculator : public QWidget
 {
@@ -15,18 +17,32 @@ public:
 
 signals:
 
-public slots:
+private slots:
     void calculateSip();
+    // void changeLabelName(QPushButton *);
+    void changeLabelName();
+    void clearAll();
 
 private:
+    QLabel *Investmentlbl;
     QLabel *TotalInvestmentlbl;
     QLabel *ExpectedReturnlbl;
     QLabel *TimePeriodlbl;
+    QLabel *Statuslbl;
 
-    QLineEdit *TotalInvestmentedit;
-    QLineEdit *ExpectedReturnedit;
-    QLineEdit *TimePeriodedit;
+    QLineEdit *InvestmentEdit;
+    QLineEdit *ExpectedReturnEdit;
+    QLineEdit *TimePeriodEdit;
     QPushButton *CalculateBtn;
+    QPushButton *MonthlyBtn;
+    QPushButton *LumpsumBtn;
+
+    QPieSeries *series;
+    QChart *chart;
+
+    double totalAmt = 0.0;
+    double EstReturnAmt = 0.0;
+    double maturity = 0.0;
 };
 
 #endif // SIPCALCULATOR_H

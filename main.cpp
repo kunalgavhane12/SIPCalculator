@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     QWidget window;
-    window.resize(400,500);
+    window.resize(600,600);
 
     window.setWindowTitle("SIP Calculator");
 
@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
     window.setLayout(vlayout);
     window.show();
 
-    // this is commnet
     // Set up code that uses the Qt event loop here.
     // Call a.quit() or a.exit() to quit the application.
     // A not very useful example would be including
